@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Navbar from '@/components/Navbar'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Footer from '@/components/Footer'
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -21,9 +22,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
+      
       <main className="flex-grow relative">
         <Component {...pageProps} />
       </main>
+
+      <Footer />
     </div>
   )
 }

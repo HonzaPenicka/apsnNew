@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
+import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 
 type Page = {
   path: string;
@@ -36,11 +39,13 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
   };
 
   return (
-    <Swiper 
+    <Swiper
+      modules={[Navigation, Pagination, Mousewheel]}
+      direction="vertical"
       onSwiper={setSwiper} 
       onSlideChange={onSlideChange}
-      direction="vertical"
-      mousewheel={true}
+      className='h-full'
+      pagination={{ clickable: true }}
       style={{ height: '100vh' }}
     >
       {pages.map((p, i) => (

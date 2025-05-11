@@ -3,8 +3,6 @@ import { APSNMobile } from '../../public/icon/mobileIcon'
 import { BurgerMenu } from '../../public/icon/burgerMenu'
 import { useCallback, useState } from 'react';
 
-
-
 export default function Navbar() {
 
   const [openMenuServices, setOpenMenuServices] = useState(false);
