@@ -1,20 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,6 +10,7 @@ html, body, #__next {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  color: white;
 }
 
 .swiper-wrapper {
@@ -31,4 +19,10 @@ html, body, #__next {
 
 .swiper-slide {
   overflow: auto !important;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 50; /* zajistí viditelnost nad ostatními prvky */
 }
