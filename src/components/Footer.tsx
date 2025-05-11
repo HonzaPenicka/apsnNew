@@ -4,7 +4,7 @@ import { LinkedIn } from "../../public/icon/LinkedIn";
 
 export default function Footer() {
     return (
-        <div className="grid md:grid-cols-4 px-8 py-12 bg-purple-600 gap-8">
+        <div className="grid md:grid-cols-4 px-8 py-12 bg-white/10 p-4 gap-8">
             <div className="text-2xl font-semibold">
                 Připojte se!
             </div>

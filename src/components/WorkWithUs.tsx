@@ -1,8 +1,10 @@
 import AnimatedNumber from "./AnimatedNumber";
+import Footer from "./Footer";
 
 export default function WorkWithUs() {
     return (
-        <div className="gid md:grid-cols-2 gap-8 bg-red-400 px-4 py-12">
+        <div className="grid">
+        <div className="gid md:grid-cols-2 gap-8 px-4 py-12 bg-black/30">
             <div className="px-4">
                 <h2 className="text-4xl font-semibold">
                     Proč pracovat s námi?
@@ -14,7 +16,7 @@ export default function WorkWithUs() {
 
             </div>
 
-        <div className="grid md:grid-cols-2 gap-8 px-4 md:px-8 md:py-12">
+        <div className="grid md:grid-cols-2 gap-8 p-4 md:px-8 md:py-12 bg-white/20">
             <div className="grid gap-4">
             <h3 className="text-4xl font-semibold flex">
                 <p>
@@ -66,6 +68,8 @@ export default function WorkWithUs() {
         </div>
 
         </div>
+        </div>
+        <Footer />
         </div>
     )
 }

@@ -1,13 +1,13 @@
 export default function FormQr() {
     return (
-        <div className="flex flex-col gap-8 px-8 py-12 bg-yellow-800">
-        <h2>
-        Zjistěte jaký je tržní potenciál vašeho projektu
-        </h2>
+        <div className="flex flex-col gap-8 px-8 py-12 overflow-y-auto bg-black/30" style={{ height: 'calc(100vh)' }}>
+            <h2 className="text-3xl font-semibold">
+                Zjistěte jaký je tržní potenciál vašeho projektu
+            </h2>
 
-        <form className="grid md:grid-cols-2 gap-8" action='https://formspree.io/f/myyrogad' method='POST'>
-        <div className="flex flex-col gap-8">
-            <h3>
+        <form className="grid md:grid-cols-2 gap-8 p-4" action='https://formspree.io/f/myyrogad' method='POST'>
+        <div className="flex flex-col gap-8 bg-white/20">
+            <h3 className="text-2xl font-semibold">
             Nezávazná konzultace
             </h3>
             <p>

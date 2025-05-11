@@ -7,7 +7,7 @@ export default function TeamHighlight() {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 bg-amber-600">
+    <div className="grid md:grid-cols-2 gap-8 bg-black/30">
       <div className="flex flex-col justify-between px-8 pt-12 gap-8">
         <h2 className="uppercase opacity-100 text-4xl">
           Poznejte náš tým
@@ -17,7 +17,7 @@ export default function TeamHighlight() {
           {['Jirka Krupička', 'Sandra Nguyen', 'Daniela Hořáková', 'Gabriel Radovský'].map((name, index) => (
             <div
               key={index}
-              className={`grid gap-1 transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
+              className={`grid gap-1 transition-opacity bg-white/20 ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
               onMouseEnter={() => handleTextHover(index)}
               onMouseLeave={() => handleTextHover(null)}
             >
