@@ -1,15 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
-export default function TeamHighlight() {
+export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || !isActive) return;
+
+    const elements = container.querySelectorAll<HTMLElement>('[data-animate]');
+    
+    elements.forEach((el, index) => {
+      el.classList.remove('animate-in');
+      void el.offsetWidth;
+      
+      setTimeout(() => {
+        el.classList.add('animate-in');
+      }, index * 150);
+    });
+
+    return () => {
+      elements.forEach(el => el.classList.remove('animate-in'));
+    };
+  }, [isActive]);
 
   const handleTextHover = (index: number | null) => setActiveIndex(index);
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 bg-black/40 h-screen">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-8 bg-black/40 h-screen">
       <div className="flex flex-col justify-between px-8 pt-12 gap-8">
-        <h2 className="uppercase opacity-100 text-4xl">Poznejte náš tým</h2>
+        <h2 
+          data-animate
+          className="uppercase text-4xl"
+        >
+          Poznejte náš tým
+        </h2>
 
         <div className="grid grid-cols-2 gap-8 md:pb-12">
           {[
@@ -20,7 +46,10 @@ export default function TeamHighlight() {
           ].map((name, index) => (
             <div
               key={index}
-              className={`grid gap-1 transition-opacity bg-white/10 ${activeIndex === index ? "opacity-100" : "opacity-50"}`}
+              data-animate
+              className={`grid gap-1 transition-opacity bg-white/10 animate-in ${
+                activeIndex === index ? "!opacity-100" : "opacity-50"
+              }`}
               onMouseEnter={() => handleTextHover(index)}
               onMouseLeave={() => handleTextHover(null)}
             >
@@ -31,18 +60,22 @@ export default function TeamHighlight() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4 px-8 pb-12 md:py-12">
+      <div className="grid grid-cols-2 gap-4 px-4 pb-12 md:py-12"> {/* Zmenšen gap a odstraněn padding-x */}
         {[0, 1, 2, 3].map((_, index) => (
           <div
             key={index}
+            data-animate
+            className="relative w-full overflow-hidden" // Přidáno pro ořez
             onMouseEnter={() => handleImageHover(index)}
             onMouseLeave={() => handleImageHover(null)}
-            className=""
           >
             <img
               src="/pics/skyscraper.jpeg"
               alt="real estate"
-              className={`aspect-square transition-opacity ${activeIndex === index ? "opacity-100" : "opacity-50"}`}
+              className={`w-full h-full object-cover transition-opacity ${
+                activeIndex === index ? "!opacity-100" : "opacity-50"
+              }`}
+              style={{ aspectRatio: '1/1' }} // Záloha pro prohlížeče, které nepodporují aspect-square
             />
           </div>
         ))}
