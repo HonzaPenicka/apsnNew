@@ -40,7 +40,7 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
           setHasAnimated(true);
         }
       },
-      { threshold: 0.3 } // aktivuje se, když je vidět alespoň 30 %
+      { threshold: 0.3 }, // aktivuje se, když je vidět alespoň 30 %
     );
 
     if (ref.current) observer.observe(ref.current);

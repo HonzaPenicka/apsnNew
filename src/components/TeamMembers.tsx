@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function TeamHighlight() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -7,17 +7,20 @@ export default function TeamHighlight() {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 bg-black/30 h-screen">
+    <div className="grid md:grid-cols-2 gap-8 bg-black/40 h-screen">
       <div className="flex flex-col justify-between px-8 pt-12 gap-8">
-        <h2 className="uppercase opacity-100 text-4xl">
-          Poznejte náš tým
-        </h2>
+        <h2 className="uppercase opacity-100 text-4xl">Poznejte náš tým</h2>
 
         <div className="grid grid-cols-2 gap-8 md:pb-12">
-          {['Jirka Krupička', 'Sandra Nguyen', 'Daniela Hořáková', 'Gabriel Radovský'].map((name, index) => (
+          {[
+            "Jirka Krupička",
+            "Sandra Nguyen",
+            "Daniela Hořáková",
+            "Gabriel Radovský",
+          ].map((name, index) => (
             <div
               key={index}
-              className={`grid gap-1 transition-opacity bg-white/20 ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
+              className={`grid gap-1 transition-opacity bg-white/10 ${activeIndex === index ? "opacity-100" : "opacity-50"}`}
               onMouseEnter={() => handleTextHover(index)}
               onMouseLeave={() => handleTextHover(null)}
             >
@@ -39,7 +42,7 @@ export default function TeamHighlight() {
             <img
               src="/pics/skyscraper.jpeg"
               alt="real estate"
-              className={`aspect-square transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
+              className={`aspect-square transition-opacity ${activeIndex === index ? "opacity-100" : "opacity-50"}`}
             />
           </div>
         ))}

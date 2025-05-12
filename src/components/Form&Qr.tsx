@@ -1,87 +1,90 @@
 export default function FormQr() {
-    return (
-        <div className="flex flex-col gap-8 px-8 py-12 overflow-y-auto bg-black/30 h-full">
-            <h2 className="text-3xl font-semibold">
-                Zjistěte jaký je tržní potenciál vašeho projektu
-            </h2>
+  return (
+    <div className="flex flex-col gap-8 px-8 py-12 overflow-y-auto bg-black/40 h-full">
+      <h2 className="text-3xl font-semibold">
+        Zjistěte jaký je tržní potenciál vašeho projektu
+      </h2>
 
-        <form className="grid md:grid-cols-2 gap-8 p-4" action='https://formspree.io/f/myyrogad' method='POST'>
+      <form
+        className="grid md:grid-cols-2 gap-8 p-4"
+        action="https://formspree.io/f/myyrogad"
+        method="POST"
+      >
         <div className="flex flex-col gap-8">
-            <h3 className="text-2xl font-semibold">
-            Nezávazná konzultace
-            </h3>
-            <p>
-            Děkujeme za váš zájem. Zanechte nám kontakt a náš akviziční specialista se Vám brzy ozve. Nebo nám zavolejte rovnou.
-            </p>
+          <h3 className="text-2xl font-semibold">Nezávazná konzultace</h3>
+          <p>
+            Děkujeme za váš zájem. Zanechte nám kontakt a náš akviziční
+            specialista se Vám brzy ozve. Nebo nám zavolejte rovnou.
+          </p>
 
-            <p>
-            <a href="tel:+420778403590" className="text-2xl font-bold">+420 778 403 590</a>
-            </p>
+          <p>
+            <a href="tel:+420778403590" className="text-2xl font-bold">
+              +420 778 403 590
+            </a>
+          </p>
 
-            <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <input
-                    type='name'
-                    name='Jméno'
-                    id='form-name'
-                    placeholder='Jméno'
-                    className='py-3 pl-3 rounded-lg border-2'
-                    required
-                    maxLength={50}
-                />
-
-            <input
-                    type='lastName'
-                    name='Přijmení'
-                    id='form-lastName'
-                    placeholder='Příjmení'
-                    className='py-3 pl-3 rounded-lg border-2'
-                    required
-                    maxLength={50}
+              type="name"
+              name="Jméno"
+              id="form-name"
+              placeholder="Jméno"
+              className="py-3 pl-3 rounded-lg border-2"
+              required
+              maxLength={50}
             />
-            </div>
 
             <input
-                                    type='phone'
-                                    name='Mobil'
-                                    id='form-phone'
-                                    placeholder='Telefonní číslo'
-                                    className='py-3 pl-3 rounded-lg border-2'
-                                    required
-                                    maxLength={20}
-                        />
+              type="lastName"
+              name="Přijmení"
+              id="form-lastName"
+              placeholder="Příjmení"
+              className="py-3 pl-3 rounded-lg border-2"
+              required
+              maxLength={50}
+            />
+          </div>
 
-                        <input
-                                    type='email'
-                                    name='E-mail'
-                                    id='form-email'
-                                    placeholder='Email'
-                                    className='py-3 pl-3 rounded-lg border-2'
-                                    required
-                                    maxLength={80}
-                        />
+          <input
+            type="phone"
+            name="Mobil"
+            id="form-phone"
+            placeholder="Telefonní číslo"
+            className="py-3 pl-3 rounded-lg border-2"
+            required
+            maxLength={20}
+          />
 
-                        <textarea
-                                    name='Zpráva'
-                                    id='message'
-                                    placeholder='Zpráva...'
-                                    className='py-3 pl-3 rounded-lg border-2'
-                                    required
-                                    rows={5}
-                        />
+          <input
+            type="email"
+            name="E-mail"
+            id="form-email"
+            placeholder="Email"
+            className="py-3 pl-3 rounded-lg border-2"
+            required
+            maxLength={80}
+          />
 
-                        <div className="flex justify-center">
-            <button type='submit' className="border px-8 py-4 hover:font-bold">
-                Odeslat
+          <textarea
+            name="Zpráva"
+            id="message"
+            placeholder="Zpráva..."
+            className="py-3 pl-3 rounded-lg border-2"
+            required
+            rows={5}
+          />
+
+          <div className="flex justify-center">
+            <button type="submit" className="border px-8 py-4 hover:font-bold">
+              Odeslat
             </button>
-            </div>
+          </div>
         </div>
 
         <div className="aspect-square bg-gray-400 text-4xl justify-center items-center flex">
-
-            <p className="uppercase">scan me</p>
-
+          <p className="uppercase">scan me</p>
         </div>
-        </form>
-        </div>
-    )
+      </form>
+    </div>
+  );
 }

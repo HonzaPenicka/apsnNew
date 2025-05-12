@@ -5,7 +5,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body, #__next {
+html,
+body,
+#__next {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -25,4 +27,30 @@ html, body, #__next {
 .swiper-button-next,
 .swiper-button-prev {
   z-index: 50; /* zajistí viditelnost nad ostatními prvky */
+}
+
+/* Vlastní šipky - TOP & BOTTOM */
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: fixed !important;
+  left: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 10000 !important;
+  cursor: pointer !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
+
+.swiper-button-prev-custom {
+  top: 20px !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z'/></svg>") !important;
+  transform: translateX(-50%) rotate(90deg) !important;
+}
+
+.swiper-button-next-custom {
+  bottom: 20px !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z'/></svg>") !important;
+  transform: translateX(-50%) rotate(90deg) !important;
 }
