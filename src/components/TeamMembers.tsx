@@ -7,7 +7,7 @@ export default function TeamHighlight() {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 bg-black/30">
+    <div className="grid md:grid-cols-2 gap-8 bg-black/30 h-screen">
       <div className="flex flex-col justify-between px-8 pt-12 gap-8">
         <h2 className="uppercase opacity-100 text-4xl">
           Poznejte náš tým
@@ -34,12 +34,12 @@ export default function TeamHighlight() {
             key={index}
             onMouseEnter={() => handleImageHover(index)}
             onMouseLeave={() => handleImageHover(null)}
-            className="cursor-pointer"
+            className=""
           >
             <img
               src="/pics/skyscraper.jpeg"
               alt="real estate"
-              className={`object-cover aspect-square transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
+              className={`aspect-square transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-50'}`}
             />
           </div>
         ))}

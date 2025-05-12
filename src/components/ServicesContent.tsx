@@ -1,7 +1,7 @@
 export default function Services() {
   return (
-    <div className="bg-black/30 px-4 md:px-8 lg:px-16 bg-black/30" style={{ height: 'calc(100vh)' }}>
-      <div className="grid md:grid-cols-3 gap-4 h-full overflow-y-auto">
+    <div className="bg-black/30 px-4 md:px-8 lg:px-16 h-screen">
+      <div className="grid md:grid-cols-3 gap-4 overflow-y-auto">
         <div className="flex flex-col gap-8 px-8 py-12 hover:bg-yellow-600/50">
           <h2 className="text-3xl font-semibold">Rozprodej projektu</h2>
           <div>Poskytneme Vám naši síť se 100.000 retailových investorů s před schváleným financováním.</div>

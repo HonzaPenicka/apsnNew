@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function WorkWithUs() {
     return (
-        <div className="grid">
+        <div className="grid h-full">
         <div className="gid md:grid-cols-2 gap-8 px-4 py-12 bg-black/30">
             <div className="px-4">
                 <h2 className="text-4xl font-semibold">

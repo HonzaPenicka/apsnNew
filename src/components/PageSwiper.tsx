@@ -26,7 +26,7 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
     >
       {pages.map((p, i) => (
         <SwiperSlide key={p.path} style={{ overflowY: 'auto' }}>
-          <div className={`flex h-full ${p.bgClass}`}>
+          <div className={`flex h-full flex-col ${p.bgClass}`}>
             {p.component}
           </div>
         </SwiperSlide>
