@@ -27,7 +27,7 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-4 px-8 py-12 bg-white/10 p-4 gap-8">
+    <div ref={containerRef} className="grid md:grid-cols-4 px-4 md:px-8 lg:px-16 py-12 bg-white/10 p-4 gap-4 md:gap-8">
       <div data-animate className="text-2xl font-semibold">
         Připojte se!
       </div>

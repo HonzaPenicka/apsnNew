@@ -51,7 +51,7 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
   }, [from, to, duration, hasAnimated]);
 
   return (
-    <div ref={ref} className={`text-4xl font-bold text-center ${className}`}>
+    <div ref={ref} className={`text-2xl md:text-4xl font-bold text-center ${className}`}>
       {value.toLocaleString("cs-CZ")}
     </div>
   );

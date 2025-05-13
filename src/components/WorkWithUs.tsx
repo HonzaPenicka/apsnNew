@@ -27,12 +27,11 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
 
   return (
     <div ref={containerRef} className="grid h-full">
-      <div className="grid md:grid-cols-2 gap-8 px-4 py-12 bg-black/40">
-        <div className="px-4">
-          <h2 data-animate className="text-4xl font-semibold">
+      <div className="grid md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-16 py-12 bg-black/40">
+          <h2 data-animate className="text-3xl font-semibold">
             Proč pracovat s námi?
           </h2>
-        </div>
+
 
         <div className="grid gap-8">
           <div data-animate className="grid grid-cols-2 gap-8 p-4 md:px-8 md:py-12 bg-white/10">
@@ -45,9 +44,9 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
               <div 
                 key={index}
                 data-animate
-                className="grid gap-4"
+                className="grid gap-2 md:gap-4 lg:gap-8"
               >
-                <h3 className="text-4xl font-semibold flex gap-2">
+                <h3 className="text-2xl font-semibold flex">
                   {item.prefix && <p>{item.prefix}</p>}
                   <AnimatedNumber to={item.number} duration={2000} />
                   {item.suffix && <p>{item.suffix}</p>}

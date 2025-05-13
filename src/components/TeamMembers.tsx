@@ -29,15 +29,15 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
 
   return (
     <div ref={containerRef} className="grid md:grid-cols-2 gap-8 bg-black/40 h-screen">
-      <div className="flex flex-col justify-between px-8 pt-12 gap-8">
+      <div className="flex flex-col justify-between px-4 md:px-8 lg:px-16 pt-12 gap-4">
         <h2 
           data-animate
-          className="uppercase text-4xl"
+          className="uppercase text-3xl"
         >
           Poznejte náš tým
         </h2>
 
-        <div className="grid grid-cols-2 gap-8 md:pb-12">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 md:pb-12">
           {[
             "Jirka Krupička",
             "Sandra Nguyen",
@@ -47,7 +47,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
             <div
               key={index}
               data-animate
-              className={`grid gap-1 transition-opacity bg-white/10 animate-in ${
+              className={`grid gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               onMouseEnter={() => handleTextHover(index)}
@@ -60,7 +60,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 px-4 pb-12 md:py-12"> {/* Zmenšen gap a odstraněn padding-x */}
+      <div className="grid grid-cols-2 gap-4 px-4 md:px-8 lg:px-16 pb-12 md:py-12"> {/* Zmenšen gap a odstraněn padding-x */}
         {[0, 1, 2, 3].map((_, index) => (
           <div
             key={index}
@@ -72,7 +72,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
             <img
               src="/pics/skyscraper.jpeg"
               alt="real estate"
-              className={`w-full h-full object-cover transition-opacity ${
+              className={`w-full object-cover aspect-square transition-opacity ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               style={{ aspectRatio: '1/1' }} // Záloha pro prohlížeče, které nepodporují aspect-square

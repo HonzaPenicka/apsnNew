@@ -24,7 +24,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-8 px-8 py-12 overflow-y-auto bg-black/40 h-full">
+    <div ref={containerRef} className="flex flex-col gap-8 px-4 md:px-8 lg:px-16 pt-12 md:pt-24 overflow-y-auto bg-black/40 h-full">
       <h2 
         data-animate
         className="text-3xl font-semibold"
@@ -34,24 +34,24 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
 
       <form
         data-animate
-        className="grid md:grid-cols-2 gap-8 p-4 justify-center items-center"
+        className="grid md:grid-cols-2 gap-8 justify-center items-center"
         action="https://formspree.io/f/myyrogad"
         method="POST"
       >
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 md:gap-8">
           <h3 
             data-animate
-            className="text-2xl font-semibold"
+            className="text-2xl font-semibold hidden md:flex"
           >
             Nezávazná konzultace
           </h3>
           
-          <p data-animate>
+          <p data-animate className="hidden md:flex">
             Děkujeme za váš zájem. Zanechte nám kontakt a náš akviziční
             specialista se Vám brzy ozve. Nebo nám zavolejte rovnou.
           </p>
 
-          <p data-animate>
+          <p data-animate className="hidden md:flex">
             <a 
               href="tel:+420778403590" 
               className="text-2xl font-bold"
@@ -70,7 +70,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Jméno"
               id="form-name"
               placeholder="Jméno"
-              className="py-3 pl-3 rounded-lg border-2"
+              className="py-2 pl-2 border"
               required
               maxLength={50}
             />
@@ -81,7 +81,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Přijmení"
               id="form-lastName"
               placeholder="Příjmení"
-              className="py-3 pl-3 rounded-lg border-2"
+              className="py-2 pl-2 border"
               required
               maxLength={50}
             />
@@ -93,7 +93,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Mobil"
             id="form-phone"
             placeholder="Telefonní číslo"
-            className="py-3 pl-3 rounded-lg border-2"
+            className="py-2 pl-2 border"
             required
             maxLength={20}
           />
@@ -104,7 +104,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="E-mail"
             id="form-email"
             placeholder="Email"
-            className="py-3 pl-3 rounded-lg border-2"
+            className="py-2 pl-2 border"
             required
             maxLength={80}
           />
@@ -114,7 +114,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Zpráva"
             id="message"
             placeholder="Zpráva..."
-            className="py-3 pl-3 rounded-lg border-2"
+            className="py-2 pl-2 border"
             required
             rows={5}
           />
@@ -134,7 +134,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
 
         <div 
           data-animate
-          className="flex justify-center items-center"
+          className="justify-center items-center hidden md:flex"
         >
           <div 
             data-animate

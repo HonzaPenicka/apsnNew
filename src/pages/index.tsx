@@ -10,32 +10,32 @@ const pages = [
   {
     path: "/",
     component: <HomeContent />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/skyscraper2.jpg')] bg-cover bg-top",
   },
   {
     path: "/about",
     component: <AboutContent />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/stripes.jpg')] bg-cover bg-top",
   },
   {
     path: "/services",
     component: <Services />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/worms.jpg')] bg-cover bg-top",
   },
   {
     path: "/contact",
     component: <FormQr />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/modern.jpg')] bg-cover bg-top",
   },
   {
     path: "/team",
     component: <TeamHighlight />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/cup.jpg')] bg-cover bg-top",
   },
   {
     path: "/workWithUs",
     component: <WorkWithUs />,
-    bgClass: "bg-[url('/pics/skyscraper.jpeg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/black.jpg')] bg-cover bg-top",
   },
 ];
 
