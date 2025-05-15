@@ -65,17 +65,16 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
           <div
             key={index}
             data-animate
-            className="relative w-full overflow-hidden" // Přidáno pro ořez
+            className="relative w-full overflow-hidden aspect-square" // Přidáno pro ořez
             onMouseEnter={() => handleImageHover(index)}
             onMouseLeave={() => handleImageHover(null)}
           >
             <img
-              src="/pics/skyscraper.jpeg"
+              src="/pics/cropped.jpeg"
               alt="real estate"
-              className={`w-full object-cover aspect-square transition-opacity ${
+              className={`w-full object-cover transition-opacity ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
-              style={{ aspectRatio: '1/1' }} // Záloha pro prohlížeče, které nepodporují aspect-square
             />
           </div>
         ))}
