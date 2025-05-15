@@ -56,7 +56,7 @@ export default function Navbar({ isActive }: { isActive?: boolean }) {
                   key={item}
                   data-animate
                   href="/"
-                  className="hover:text-yellow-600 focus:hover:text-yellow-600"
+                  className="hover:text-[#28456C] focus:hover:text-[#28456C]"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   {item}

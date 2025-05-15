@@ -54,7 +54,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
           <p data-animate className="hidden md:flex">
             <a 
               href="tel:+420778403590" 
-              className="text-2xl md:text-3xl font-bold hover:text-amber-500"
+              className="text-2xl md:text-3xl font-bold hover:text-[#28456C]"
             >
               +420 778 403 590
             </a>
@@ -70,7 +70,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Jméno"
               id="form-name"
               placeholder="Jméno"
-              className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
+              className="py-2 pl-2 border-2 hover:border-[#28456C] active:border-[#28456C]"
               required
               maxLength={50}
             />
@@ -81,7 +81,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Přijmení"
               id="form-lastName"
               placeholder="Příjmení"
-              className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
+              className="py-2 pl-2 border-2 hover:border-[#28456C] active:border-[#28456C]"
               required
               maxLength={50}
             />
@@ -93,7 +93,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Mobil"
             id="form-phone"
             placeholder="Telefonní číslo"
-            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
+            className="py-2 pl-2 border-2 hover:border-[#28456C] active:border-[#28456C]"
             required
             maxLength={20}
           />
@@ -104,7 +104,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="E-mail"
             id="form-email"
             placeholder="Email"
-            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
+            className="py-2 pl-2 border-2 hover:border-[#28456C] active:border-[#28456C]"
             required
             maxLength={80}
           />
@@ -114,7 +114,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Zpráva"
             id="message"
             placeholder="Zpráva..."
-            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
+            className="py-2 pl-2 border-2 hover:border-[#28456C] active:border-[#28456C]"
             required
             rows={5}
           />
@@ -125,7 +125,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
           >
             <button 
               type="submit" 
-              className="border-2 px-8 py-4 hover:border-amber-500 hover:text-amber-500"
+              className="border-2 px-8 py-4 hover:border-[#28456C] hover:font-bold"
             >
               Odeslat
             </button>

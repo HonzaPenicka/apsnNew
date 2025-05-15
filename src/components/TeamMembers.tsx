@@ -47,7 +47,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
             <div
               key={index}
               data-animate
-              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-amber-500/50 ${
+              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-[#28456C] ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               onMouseEnter={() => handleTextHover(index)}

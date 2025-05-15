@@ -58,9 +58,9 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
             Kontakt
           </p>
           
-          <a href="tel:+420123456789">+420 123 456 789</a>
+          <a className="hover:font-bold" href="tel:+420123456789">+420 123 456 789</a>
 
-          <a href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
+          <a className="hover:font-bold" href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
         </div>
       </div>
 
@@ -76,8 +76,9 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
           <p className="font-bold text-lg md:text-xl">
             Kontakt
           </p>
-          <p>+420 123 456 789</p>
-          <p>hello@tohlejeemail.com</p>
+          <a className="hover:font-bold" href="tel:+420123456789">+420 123 456 789</a>
+
+          <a className="hover:font-bold" href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">
