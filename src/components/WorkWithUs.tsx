@@ -28,7 +28,7 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
   return (
     <div ref={containerRef} className="grid h-full gap-4">
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 px-4 md:px-8 lg:px-16 pt-16 md:pt-24 md:py-12 bg-black/40">
-          <h2 data-animate className="text-3xl font-semibold">
+          <h2 data-animate className="text-3xl md:text-4xl font-semibold">
             Proč pracovat s námi?
           </h2>
 
@@ -36,10 +36,10 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
         <div className="grid gap-2 md:gap-8">
           <div data-animate className="grid grid-cols-2 gap-2 md:gap-8 p-4 md:px-8 md:py-12 bg-white/10">
             {[
-              { prefix: "#", number: 1, text: "Realitní skupina ve Wheltonu v letech 2022 - 2025" },
-              { number: 18, suffix: "+", text: "Let zkušeností v realitách" },
-              { number: 10, text: "Licencovaných realitních makléřů" },
-              { prefix: "$", number: 1000, text: "Průměrná úspora 1 000 USD na každých 100 000 USD pro naše kupující" }
+              { prefix: "#", number: 1, text: "Realitní skupina ve Wheltonu v letech 2022 - 2025." },
+              { number: 18, suffix: "+", text: "Let zkušeností v realitách." },
+              { number: 10, text: "Licencovaných realitních makléřů." },
+              { prefix: "$", number: 1000, text: "Průměrná úspora 1 000 USD na každých 100 000 USD pro naše kupující." }
             ].map((item, index) => (
               <div 
                 key={index}

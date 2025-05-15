@@ -32,7 +32,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
       <div className="flex flex-col justify-between px-4 md:px-8 lg:px-16 pt-12 gap-4">
         <h2 
           data-animate
-          className="uppercase text-3xl"
+          className="uppercase text-3xl md:text-4xl font-semibold"
         >
           Poznejte náš tým
         </h2>
@@ -47,7 +47,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
             <div
               key={index}
               data-animate
-              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 ${
+              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-amber-500/50 ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               onMouseEnter={() => handleTextHover(index)}

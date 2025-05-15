@@ -33,7 +33,7 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
       </div>
 
       <div className="grid grid-cols-2 md:hidden">
-        <div data-animate className="text-2xl font-semibold">
+        <div data-animate className="text-2xl md:text-4xl font-semibold">
           Připojte se!
         </div>
 
@@ -57,8 +57,10 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
           <p className="font-bold text-lg md:text-xl">
             Kontakt
           </p>
-          <p>+420 123 456 789</p>
-          <p>hello@tohlejeemail.com</p>
+          
+          <a href="tel:+420123456789">+420 123 456 789</a>
+
+          <a href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
         </div>
       </div>
 

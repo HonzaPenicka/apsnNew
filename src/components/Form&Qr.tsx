@@ -27,7 +27,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
     <div ref={containerRef} className="flex flex-col gap-8 px-4 md:px-8 lg:px-16 pt-16 md:pt-24 overflow-y-auto bg-black/40 h-full">
       <h2 
         data-animate
-        className="text-3xl font-semibold"
+        className="text-3xl md:text-4xl font-semibold"
       >
         Zjistěte jaký je tržní potenciál vašeho projektu
       </h2>
@@ -38,7 +38,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
         action="https://formspree.io/f/myyrogad"
         method="POST"
       >
-        <div className="flex flex-col gap-4 md:gap-8">
+        <div className="flex flex-col gap-4">
           <h3 
             data-animate
             className="text-2xl font-semibold hidden md:flex"
@@ -46,7 +46,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             Nezávazná konzultace
           </h3>
           
-          <p data-animate className="hidden md:flex">
+          <p data-animate className="hidden md:flex md:text-xl">
             Děkujeme za váš zájem. Zanechte nám kontakt a náš akviziční
             specialista se Vám brzy ozve. Nebo nám zavolejte rovnou.
           </p>
@@ -54,7 +54,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
           <p data-animate className="hidden md:flex">
             <a 
               href="tel:+420778403590" 
-              className="text-2xl font-bold"
+              className="text-2xl md:text-3xl font-bold hover:text-amber-500"
             >
               +420 778 403 590
             </a>
@@ -70,7 +70,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Jméno"
               id="form-name"
               placeholder="Jméno"
-              className="py-2 pl-2 border"
+              className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
               required
               maxLength={50}
             />
@@ -81,7 +81,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
               name="Přijmení"
               id="form-lastName"
               placeholder="Příjmení"
-              className="py-2 pl-2 border"
+              className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
               required
               maxLength={50}
             />
@@ -93,7 +93,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Mobil"
             id="form-phone"
             placeholder="Telefonní číslo"
-            className="py-2 pl-2 border"
+            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
             required
             maxLength={20}
           />
@@ -104,7 +104,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="E-mail"
             id="form-email"
             placeholder="Email"
-            className="py-2 pl-2 border"
+            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
             required
             maxLength={80}
           />
@@ -114,7 +114,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             name="Zpráva"
             id="message"
             placeholder="Zpráva..."
-            className="py-2 pl-2 border"
+            className="py-2 pl-2 border-2 hover:border-amber-500 active:border-amber-500"
             required
             rows={5}
           />
@@ -125,7 +125,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
           >
             <button 
               type="submit" 
-              className="border px-8 py-4 hover:font-bold"
+              className="border-2 px-8 py-4 hover:border-amber-500 hover:text-amber-500"
             >
               Odeslat
             </button>
