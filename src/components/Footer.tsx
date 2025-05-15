@@ -45,13 +45,13 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
       </div>
 
       <div className="grid grid-cols-2 gap-4 md:gap-8 md:hidden">
-        <div data-animate className="grid">
-          <p className="font-bold text-lg md:text-xl">
-            Adresa
-          </p>
-          <p>123 Anywhere St.</p>
-          <p>Praha, 110 00</p>
-        </div>
+        <a href="https://maps.app.goo.gl/b9wT5goGJGfipXzW9" target="_blank" data-animate className="grid md:hidden">
+            <p className="font-bold text-lg md:text-xl">
+              Adresa
+            </p>
+            <p className="hover:text-amber-500 hover:font-bold">Bulharská 996/20</p>
+            <p className="hover:text-amber-500 hover:font-bold">101 00 Praha</p>
+        </a>
 
         <div data-animate className="grid">
           <p className="font-bold text-lg md:text-xl">
@@ -68,8 +68,8 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
           <p className="font-bold text-lg md:text-xl">
             Adresa
           </p>
-          <p className="hover:text-amber-500">Bulharská 996/20</p>
-          <p className="hover:text-amber-500">101 00 Praha</p>
+          <p className="hover:text-amber-500 hover:font-bold">Bulharská 996/20</p>
+          <p className="hover:text-amber-500 hover:font-bold">101 00 Praha</p>
       </a>
 
       <div data-animate className="hidden md:grid">
