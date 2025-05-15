@@ -27,7 +27,7 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-4 px-4 md:px-8 lg:px-16 md:py-12 bg-white/10 p-4 gap-4 md:gap-8">
+    <div ref={containerRef} className="grid md:grid-cols-4 px-4 md:px-8 lg:px-16 md:py-12 bg-white/10 p-4 md:gap-8">
       <div data-animate className="text-2xl font-semibold hidden md:block">
         Připojte se!
       </div>
@@ -44,20 +44,22 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
         </div>
       </div>
 
-      <div data-animate className="grid">
-        <p className="font-bold text-lg md:text-xl">
-          Hlavní kancelář
-        </p>
-        <p>123 Anywhere St.</p>
-        <p>Jakékoliv Město, ST 12345</p>
-      </div>
+      <div className="grid grid-cols-2 md:grid gap-4 md:gap-8">
+        <div data-animate className="grid">
+          <p className="font-bold text-lg md:text-xl">
+            Adresa
+          </p>
+          <p>123 Anywhere St.</p>
+          <p>Praha, 110 00</p>
+        </div>
 
-      <div data-animate className="grid">
-        <p className="font-bold text-lg md:text-xl">
-          Hlavní kancelář
-        </p>
-        <p>123 Anywhere St.</p>
-        <p>Jakékoliv Město, ST 12345</p>
+        <div data-animate className="grid">
+          <p className="font-bold text-lg md:text-xl">
+            Kontakt
+          </p>
+          <p>+420 123 456 789</p>
+          <p>hello@tohlejeemail.com</p>
+        </div>
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">

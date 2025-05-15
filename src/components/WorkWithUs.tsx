@@ -27,7 +27,7 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
 
   return (
     <div ref={containerRef} className="grid h-full gap-4">
-      <div className="grid md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-16 pt-12 md:pt-24 md:py-12 bg-black/40">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-8 px-4 md:px-8 lg:px-16 pt-16 md:pt-24 md:py-12 bg-black/40">
           <h2 data-animate className="text-3xl font-semibold">
             Proč pracovat s námi?
           </h2>
