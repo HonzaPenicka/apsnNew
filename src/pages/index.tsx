@@ -5,6 +5,7 @@ import Services from "@/components/ServicesContent";
 import FormQr from "@/components/Form&Qr";
 import TeamHighlight from "@/components/TeamMembers";
 import WorkWithUs from "@/components/WorkWithUs";
+import Partners from "@/components/Partners";
 
 const pages = [
   {
@@ -31,6 +32,11 @@ const pages = [
     path: "/team",
     component: <TeamHighlight />,
     bgClass: "bg-[url('/pics/cup.jpg')] bg-cover bg-top",
+  },
+  {
+    path: "/partners",
+    component: <Partners />,
+    bgClass: "bg-[url('/pics/hands.jpg')] bg-cover bg-top",
   },
   {
     path: "/workWithUs",

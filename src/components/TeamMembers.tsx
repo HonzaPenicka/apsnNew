@@ -39,22 +39,22 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
 
         <div className="grid grid-cols-2 gap-2 md:gap-4 md:pb-12">
           {[
-            "Jirka Krupička",
-            "Sandra Nguyen",
-            "Daniela Hořáková",
-            "Gabriel Radovský",
-          ].map((name, index) => (
+            { name: "Jirka Krupička", role: "CEO" },
+            { name: "Daniel Tryzná", role: "CSO" },
+            { name: "Daniela Hořáková", role: "CMO" },
+            { name: "Sandra Nguyenová", role: "COO" },
+          ].map((person, index) => (
             <div
               key={index}
               data-animate
-              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-[#28456C] ${
+              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-[#28456C] focus:bg-[#28456C] active:bg-[#28456C] ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               onMouseEnter={() => handleTextHover(index)}
               onMouseLeave={() => handleTextHover(null)}
             >
-              <p className="md:text-xl font-semibold">{name}</p>
-              <p>CEO</p>
+              <p className="md:text-xl font-semibold">{person.name}</p>
+              <p>{person.role}</p>
             </div>
           ))}
         </div>

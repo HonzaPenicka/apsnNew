@@ -58,27 +58,27 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
             Kontakt
           </p>
           
-          <a className="hover:font-bold" href="tel:+420773007171">+420 773 007 171</a>
+          <a className="hover:font-bold hover:text-amber-500" href="tel:+420773007171">+420 773 007 171</a>
 
-          <a className="hover:font-bold" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
+          <a className="hover:font-bold hover:text-amber-500" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
         </div>
       </div>
 
-      <div data-animate className="hidden md:grid">
+      <a href="https://maps.app.goo.gl/b9wT5goGJGfipXzW9" target="_blank" data-animate className="hidden md:grid">
           <p className="font-bold text-lg md:text-xl">
             Adresa
           </p>
-          <p>123 Anywhere St.</p>
-          <p>Praha, 110 00</p>
-      </div>
+          <p className="hover:text-amber-500">Bulharská 996/20</p>
+          <p className="hover:text-amber-500">101 00 Praha</p>
+      </a>
 
       <div data-animate className="hidden md:grid">
           <p className="font-bold text-lg md:text-xl">
             Kontakt
           </p>
-          <a className="hover:font-bold" href="tel:+420773007171">+420 773 007 171</a>
+          <a className="hover:font-bold hover:text-amber-500" href="tel:+420773007171">+420 773 007 171</a>
 
-          <a className="hover:font-bold" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
+          <a className="hover:font-bold hover:text-amber-500" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">

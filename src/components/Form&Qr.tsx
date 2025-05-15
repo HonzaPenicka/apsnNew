@@ -54,7 +54,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
           <p data-animate className="hidden md:flex">
             <a 
               href="tel:+420773007171" 
-              className="text-2xl md:text-3xl font-bold hover:text-[#28456C]"
+              className="text-2xl md:text-3xl font-bold hover:text-amber-500"
             >
               +420 773 007 171
             </a>
