@@ -28,7 +28,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-2 gap-8 bg-black/40 h-screen">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 md:gap-8 bg-black/40 h-screen pt-4 md:pt-12">
       <div className="flex flex-col justify-between px-4 md:px-8 lg:px-16 pt-12 gap-4">
         <h2 
           data-animate
@@ -37,7 +37,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
           Poznejte náš tým
         </h2>
 
-        <div className="grid grid-cols-2 gap-4 md:gap-8 md:pb-12">
+        <div className="grid grid-cols-2 gap-2 md:gap-4 md:pb-12">
           {[
             "Jirka Krupička",
             "Sandra Nguyen",
@@ -60,7 +60,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 px-4 md:px-8 lg:px-16 pb-12 md:py-12"> {/* Zmenšen gap a odstraněn padding-x */}
+      <div className="grid grid-cols-2 gap-2 md:gap-4 px-4 md:px-8 lg:px-16 pb-12 md:py-12"> {/* Zmenšen gap a odstraněn padding-x */}
         {[0, 1, 2, 3].map((_, index) => (
           <div
             key={index}

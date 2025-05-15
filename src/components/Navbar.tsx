@@ -44,20 +44,6 @@ export default function Navbar({ isActive }: { isActive?: boolean }) {
         <APSNMobile className="w-32" />
       </Link>
 
-      <div className="hidden md:flex space-x-8">
-        {['Domů', 'O nás', 'Služby', 'Kontakt'].map((item, index) => (
-          <Link
-            key={item}
-            data-animate
-            href="/"
-            className="hover:text-yellow-600"
-            style={{ transitionDelay: `${index * 50}ms` }}
-          >
-            {item}
-          </Link>
-        ))}
-      </div>
-
       <div 
         data-animate
         className="space-x-4 md:hidden justify-center items-center flex"

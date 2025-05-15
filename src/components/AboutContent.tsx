@@ -22,8 +22,8 @@ export default function AboutContent({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 items-center bg-black/40 px-4 md:px-8 lg:px-16 h-screen">
-      <div className="pt-12 aspect-square">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-0 md:gap-4 items-center bg-black/40 px-4 md:px-8 lg:px-16 h-screen">
+      <div className="pt-8 aspect-square">
         <div className="flex flex-col gap-16">
           <h2 
             data-animate

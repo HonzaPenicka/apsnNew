@@ -26,15 +26,15 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="grid h-full">
-      <div className="grid md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-16 py-12 bg-black/40">
+    <div ref={containerRef} className="grid h-full gap-4">
+      <div className="grid md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-16 pt-12 md:pt-24 md:py-12 bg-black/40">
           <h2 data-animate className="text-3xl font-semibold">
             Proč pracovat s námi?
           </h2>
 
 
-        <div className="grid gap-8">
-          <div data-animate className="grid grid-cols-2 gap-8 p-4 md:px-8 md:py-12 bg-white/10">
+        <div className="grid gap-2 md:gap-8">
+          <div data-animate className="grid grid-cols-2 gap-2 md:gap-8 p-4 md:px-8 md:py-12 bg-white/10">
             {[
               { prefix: "#", number: 1, text: "Realitní skupina ve Wheltonu v letech 2022 - 2025" },
               { number: 18, suffix: "+", text: "Let zkušeností v realitách" },

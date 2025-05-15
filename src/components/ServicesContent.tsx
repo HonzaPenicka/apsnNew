@@ -150,7 +150,7 @@ export default function Services({ isActive }: { isActive?: boolean }) {
         >
           {SERVICE_COLUMNS.map((column, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col gap-8 px-4 md:px-8 lg:px-16 py-12 hover:bg-yellow-600/50 h-full">
+              <div className="flex flex-col gap-8 md:px-8 lg:px-16 pt-4 md:pt-0 md:py-12 hover:bg-yellow-600/50 h-full">
                 <h2 className="text-3xl font-semibold">{column.title}</h2>
                 {column.content.map((item, i) => renderContent(item, i))}
               </div>
@@ -164,7 +164,7 @@ export default function Services({ isActive }: { isActive?: boolean }) {
           {SERVICE_COLUMNS.map((column, index) => (
             <div 
               key={index}
-              className="flex flex-col gap-8 px-8 py-12 hover:bg-yellow-600/50"
+              className="flex flex-col gap-8 px-8 md:py-12 hover:bg-yellow-600/50"
             >
               <h2 className="text-3xl font-semibold">{column.title}</h2>
               {column.content.map((item, i) => renderContent(item, i))}
