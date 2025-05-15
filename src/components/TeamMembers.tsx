@@ -54,7 +54,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
               onMouseLeave={() => handleTextHover(null)}
             >
               <p className="md:text-xl font-semibold">{name}</p>
-              <p>SEO, Owner</p>
+              <p>CEO</p>
             </div>
           ))}
         </div>

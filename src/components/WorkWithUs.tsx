@@ -38,7 +38,7 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
             {[
               { prefix: "#", number: 1, text: "Realitní skupina ve Wheltonu v letech 2022 - 2025." },
               { number: 18, suffix: "+", text: "Let zkušeností v realitách." },
-              { number: 10, text: "Licencovaných realitních makléřů." },
+              { number: 2000, text: "Licencovaných realitních makléřů." },
               { prefix: "$", number: 1000, text: "Průměrná úspora 1 000 USD na každých 100 000 USD pro naše kupující." }
             ].map((item, index) => (
               <div 

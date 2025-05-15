@@ -58,9 +58,9 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
             Kontakt
           </p>
           
-          <a className="hover:font-bold hover:text-[#28456C]" href="tel:+420123456789">+420 123 456 789</a>
+          <a className="hover:font-bold" href="tel:+420773007171">+420 773 007 171</a>
 
-          <a className="hover:font-bold hover:text-[#28456C]" href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
+          <a className="hover:font-bold" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
         </div>
       </div>
 
@@ -76,9 +76,9 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
           <p className="font-bold text-lg md:text-xl">
             Kontakt
           </p>
-          <a className="hover:font-bold hover:text-[#28456C]" href="tel:+420123456789">+420 123 456 789</a>
+          <a className="hover:font-bold" href="tel:+420773007171">+420 773 007 171</a>
 
-          <a className="hover:font-bold hover:text-[#28456C]" href="mailto:hello@tohlejeemail.com">hello@tohlejeemail.com</a>
+          <a className="hover:font-bold" href="mailto:Krupicka.jiri@apsn.cz">Krupicka.jiri@apsn.cz</a>
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">
