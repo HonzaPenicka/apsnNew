@@ -44,7 +44,7 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid gap-4 md:gap-8">
+      <div className="grid grid-cols-2 gap-4 md:gap-8 md:hidden">
         <div data-animate className="grid">
           <p className="font-bold text-lg md:text-xl">
             Adresa
@@ -60,6 +60,22 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
           <p>+420 123 456 789</p>
           <p>hello@tohlejeemail.com</p>
         </div>
+      </div>
+
+      <div data-animate className="hidden md:grid">
+          <p className="font-bold text-lg md:text-xl">
+            Adresa
+          </p>
+          <p>123 Anywhere St.</p>
+          <p>Praha, 110 00</p>
+      </div>
+
+      <div data-animate className="hidden md:grid">
+          <p className="font-bold text-lg md:text-xl">
+            Kontakt
+          </p>
+          <p>+420 123 456 789</p>
+          <p>hello@tohlejeemail.com</p>
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">

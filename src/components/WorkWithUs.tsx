@@ -34,7 +34,7 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
 
 
         <div className="grid gap-2 md:gap-8">
-          <div data-animate className="grid grid-cols-2 gap-2 md:gap-8 p-4 md:px-8 md:py-12 bg-white/10">
+          <div data-animate className="grid grid-cols-2 gap-2 md:gap-8 p-2 md:p-4 md:px-8 md:py-12 bg-white/10">
             {[
               { prefix: "#", number: 1, text: "Realitní skupina ve Wheltonu v letech 2022 - 2025" },
               { number: 18, suffix: "+", text: "Let zkušeností v realitách" },

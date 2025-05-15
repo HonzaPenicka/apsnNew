@@ -24,7 +24,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-4 md:gap-8 px-4 md:px-8 lg:px-16 pt-16 md:pt-24 overflow-y-auto bg-black/40 h-full">
+    <div ref={containerRef} className="flex flex-col gap-8 px-4 md:px-8 lg:px-16 pt-16 md:pt-24 overflow-y-auto bg-black/40 h-full">
       <h2 
         data-animate
         className="text-3xl font-semibold"
