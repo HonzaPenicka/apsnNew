@@ -46,7 +46,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             Nezávazná konzultace
           </h3>
           
-          <p data-animate className="hidden md:flex md:text-xl">
+          <p data-animate className="hidden md:flex md:text-xl text-justify lg:pr-24">
             Děkujeme za váš zájem. Zanechte nám kontakt a náš akviziční
             specialista se Vám brzy ozve. Nebo nám zavolejte rovnou.
           </p>

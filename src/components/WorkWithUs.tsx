@@ -32,7 +32,6 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
             Proč pracovat s námi?
           </h2>
 
-
         <div className="grid gap-2 md:gap-8">
           <div data-animate className="grid grid-cols-2 gap-2 md:gap-8 p-4 md:px-8 md:py-12 bg-white/10">
             {[
@@ -44,14 +43,14 @@ export default function WorkWithUs({ isActive }: { isActive?: boolean }) {
               <div 
                 key={index}
                 data-animate
-                className="grid gap-2 md:gap-4 lg:gap-8"
+                className="grid gap-2 md:gap-4 lg:gap-8 grid-rows-[auto_1fr]"
               >
-                <h3 className="text-2xl font-semibold flex">
+                <h3 className="text-2xl md:text-4xl font-semibold flex mb-0">
                   {item.prefix && <p>{item.prefix}</p>}
                   <AnimatedNumber to={item.number} duration={2000} />
                   {item.suffix && <p>{item.suffix}</p>}
                 </h3>
-                <p>{item.text}</p>
+                <p className="mt-0">{item.text}</p>
               </div>
             ))}
           </div>
