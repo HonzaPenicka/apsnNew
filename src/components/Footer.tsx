@@ -38,9 +38,17 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
         </div>
 
         <div data-animate className="flex gap-4">
-          <Facebook />
-          <Instagram />
-          <LinkedIn />
+          <a href="https://www.linkedin.com/in/apsn-sro-03789a366/" target="_blank">
+            <Facebook />
+          </a>
+
+          <a href="https://www.instagram.com/apsn_sro?igsh=eG1yOHo5N2EwZG43" target="_blank">
+            <Instagram />
+          </a>
+
+          <a href="" target="_blank">
+            <LinkedIn />
+          </a>
         </div>
       </div>
 
@@ -82,9 +90,17 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
       </div>
 
       <div data-animate className="hidden md:grid md:grid-cols-3">
-        <Facebook />
-        <Instagram />
-        <LinkedIn />
+          <a href="https://www.linkedin.com/in/apsn-sro-03789a366/" target="_blank">
+            <Facebook />
+          </a>
+
+          <a href="https://www.instagram.com/apsn_sro?igsh=eG1yOHo5N2EwZG43" target="_blank">
+            <Instagram />
+          </a>
+
+          <a href="" target="_blank">
+            <LinkedIn />
+          </a>
       </div>
     </div>
   );
