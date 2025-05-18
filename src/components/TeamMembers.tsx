@@ -28,7 +28,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 md:gap-8 bg-black/20 h-screen pt-12">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 md:gap-8 bg-black/20 h-screen pt-16">
       <div className="flex flex-col px-4 md:px-8 lg:px-16 gap-4 md:gap-48">
         <h2 
           data-animate
