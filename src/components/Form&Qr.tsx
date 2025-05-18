@@ -60,7 +60,7 @@ export default function FormQr({ isActive }: { isActive?: boolean }) {
             </a>
           </p>
 
-          <div className="grid gap-4 md:gap-8 bg-[#28456C]/40 p-4 rounded-xl">
+          <div className="grid gap-4 md:gap-8 bg-[#28456C]/40 p-4 rounded-xl md:mr-16">
             <div 
               data-animate
               className="grid grid-cols-2 gap-4"
