@@ -40,7 +40,7 @@ export default function HomeContent({ isActive }: { isActive?: boolean }) {
             data-animate
             className="uppercase text-lg md:text-2xl font-normal text-white z-10"
           >
-            připojte se a zrychlete svůj prodej
+            Propojte se a zrychlete svůj prodej.
           </h2>
         </div>
       </div>
