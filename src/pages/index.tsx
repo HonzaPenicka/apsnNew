@@ -36,7 +36,7 @@ const pages = [
   {
     path: "/partners",
     component: <Partners />,
-    bgClass: "bg-[url('/pics/hands.jpg')] bg-cover bg-top",
+    bgClass: "bg-[url('/pics/flat.jpg')] bg-cover bg-top",
   },
   {
     path: "/workWithUs",

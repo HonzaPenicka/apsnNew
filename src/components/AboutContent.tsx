@@ -22,9 +22,9 @@ export default function AboutContent({ isActive }: { isActive?: boolean }) {
   }, [isActive]);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-2 gap-0 md:gap-16 items-center bg-black/40 px-4 md:px-8 lg:px-16 h-screen">
-      <div className="pt-8 aspect-auto md:aspect-square">
-        <div className="flex flex-col gap-8 md:gap-16">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-0 md:gap-16 items-center bg-black/20 px-4 md:px-8 lg:px-16 h-screen">
+      <div className="pt-8 aspect-auto md:aspect-square bg-[#28456C]/40 p-4 rounded-xl">
+        <div className="flex flex-col gap-8 md:gap-16 md:mt-24 md:mx-12">
           <h2 
             data-animate
             className="text-3xl md:text-4xl font-semibold"

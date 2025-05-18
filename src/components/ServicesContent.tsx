@@ -111,7 +111,7 @@ export default function Services({ isActive }: { isActive?: boolean }) {
         <h3 data-animate className="text-2xl font-semibold">
           {item.subheading}
         </h3>
-        <ol data-animate className="list-decimal list-inside mt-4">
+        <ol data-animate className="list-disc list-inside mt-4 grid gap-2">
           {item.list.map((point, i) => (
             <li key={i} data-animate>{point}</li>
           ))}
@@ -122,7 +122,7 @@ export default function Services({ isActive }: { isActive?: boolean }) {
 
   // 7. Hlavní render
   return (
-    <div ref={containerRef} className="bg-black/40 px-4 md:px-8 lg:px-16 h-screen pt-12">
+    <div ref={containerRef} className="bg-black/20 px-4 md:px-8 lg:px-16 h-screen pt-12">
       {isMobile ? (
         <Swiper
           key={String(isMobile)}
@@ -150,8 +150,8 @@ export default function Services({ isActive }: { isActive?: boolean }) {
         >
           {SERVICE_COLUMNS.map((column, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col gap-8 md:px-8 lg:px-16 pt-4 md:pt-0 md:py-12 hover:bg-[#28456C] h-full">
-                <h2 className="text-3xl md:text-4xl font-semibold">{column.title}</h2>
+              <div className="flex flex-col gap-8 md:px-8 lg:px-16 pt-4 md:pt-0 md:py-12 hover:bg-[#28456C] bg-[#28456C]/40 p-4 rounded-xl">
+                <h2 className="text-3xl md:text-4xl font-semibold md:text-center">{column.title}</h2>
                 {column.content.map((item, i) => renderContent(item, i))}
               </div>
             </SwiperSlide>
@@ -160,13 +160,13 @@ export default function Services({ isActive }: { isActive?: boolean }) {
           <div className="swiper-button-prev-custom"></div>
         </Swiper>
       ) : (
-        <div className="grid md:grid-cols-3 gap-4 h-full">
+        <div className="grid md:grid-cols-3 gap-4">
           {SERVICE_COLUMNS.map((column, index) => (
             <div 
               key={index}
-              className="flex flex-col gap-8 md:text-xl px-8 md:py-12 hover:bg-[#28456C]"
+              className="flex flex-col gap-8 md:text-xl mx-4 md:my-12 p-4 hover:bg-[#28456C] bg-[#28456C]/40 rounded-xl"
             >
-              <h2 className="text-3xl md:text-4xl font-semibold">{column.title}</h2>
+              <h2 className="text-3xl md:text-4xl font-semibold text-center">{column.title}</h2>
               {column.content.map((item, i) => renderContent(item, i))}
             </div>
           ))}

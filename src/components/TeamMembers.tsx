@@ -28,16 +28,16 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
   const handleImageHover = (index: number | null) => setActiveIndex(index);
 
   return (
-    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 md:gap-8 bg-black/40 h-screen pt-4 md:pt-12">
-      <div className="flex flex-col justify-between px-4 md:px-8 lg:px-16 pt-12 gap-4">
+    <div ref={containerRef} className="grid md:grid-cols-2 gap-4 md:gap-8 bg-black/20 h-screen pt-4 md:pt-12">
+      <div className="flex flex-col px-4 md:px-8 lg:px-16 gap-4 md:gap-48">
         <h2 
           data-animate
-          className="uppercase text-3xl md:text-4xl font-semibold"
+          className="uppercase text-3xl md:text-4xl font-semibold md:mt-12"
         >
           Poznejte náš tým
         </h2>
 
-        <div className="grid grid-cols-2 gap-2 md:gap-4 md:pb-12">
+        <div className="grid grid-cols-2 gap-2 md:gap-8 bg-[#28456C]/40 p-4 rounded-xl">
           {[
             { name: "Jirka Krupička", role: "CEO" },
             { name: "Daniel Tryzná", role: "CSO" },
@@ -47,7 +47,7 @@ export default function TeamHighlight({ isActive }: { isActive?: boolean }) {
             <div
               key={index}
               data-animate
-              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-4 hover:bg-[#28456C] focus:bg-[#28456C] active:bg-[#28456C] ${
+              className={`grid md:gap-1 transition-opacity bg-white/10 animate-in p-2 md:p-8 hover:bg-[#28456C] focus:bg-[#28456C] active:bg-[#28456C] ${
                 activeIndex === index ? "!opacity-100" : "opacity-50"
               }`}
               onMouseEnter={() => handleTextHover(index)}

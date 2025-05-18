@@ -13,9 +13,9 @@ type Page = {
   bgClass: string;
 };
 
-// PageSwiper.tsx
 export default function PageSwiper({ pages }: { pages: Page[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const totalSlides = pages.length;
 
   return (
     <div className="relative h-screen">
@@ -26,7 +26,6 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
         pagination={{ clickable: true }}
         mousewheel={true}
         className="h-full"
-        // Nové nastavení pro mobilní touch events
         touchStartPreventDefault={false}
         allowTouchMove={true}
         preventInteractionOnTransition={false}
@@ -34,7 +33,6 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
           nextEl: ".swiper-button-next-custom",
           prevEl: ".swiper-button-prev-custom",
         }}
-        // Přidejte tyto CSS vlastnosti
         style={{
           touchAction: 'pan-y',
           userSelect: 'text'
@@ -45,7 +43,6 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
             key={page.path} 
             style={{ 
               overflowY: "auto",
-              // Povolení interakce s obsahem
               touchAction: 'manipulation',
               userSelect: 'auto'
             }}
@@ -59,8 +56,9 @@ export default function PageSwiper({ pages }: { pages: Page[] }) {
         ))}
       </Swiper>
 
-      <div className="swiper-button-prev-custom" />
-      <div className="swiper-button-next-custom" />
+      {/* Upravené tlačítka s podmíněným zobrazením */}
+      <div className={`swiper-button-prev-custom ${activeIndex === 0 ? 'opacity-0 pointer-events-none' : ''}`} />
+      <div className={`swiper-button-next-custom ${activeIndex === totalSlides - 1 ? 'opacity-0 pointer-events-none' : ''}`} />
     </div>
   );
 }

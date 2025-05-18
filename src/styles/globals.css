@@ -37,27 +37,46 @@ body,
 }
 
 /* Vlastní šipky - TOP & BOTTOM */
-.swiper-button-next-custom,
-.swiper-button-prev-custom {
-  position: fixed !important;
-  left: 50% !important;
+/* Přidejte tyto základní styly */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: absolute;
   width: 40px !important;
   height: 40px !important;
-  z-index: 10000 !important;
-  cursor: pointer !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 10;
+  cursor: pointer;
+  transition: filter 0.3s ease;
 }
 
 .swiper-button-prev-custom {
+  left: 50% !important;
   top: 20px !important;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z'/></svg>") !important;
   transform: translateX(-50%) rotate(90deg) !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z'/></svg>") !important;
 }
 
 .swiper-button-next-custom {
+  left: 50% !important;
   bottom: 20px !important;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z'/></svg>") !important;
   transform: translateX(-50%) rotate(90deg) !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='white' d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z'/></svg>") !important;
+}
+
+/* Hover stavy */
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='%2328456C' d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z'/></svg>") !important;
+}
+
+.swiper-button-next-custom:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path fill='%2328456C' d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z'/></svg>") !important;
+}
+
+.swiper-button-prev-custom.swiper-button-disabled,
+.swiper-button-next-custom.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
