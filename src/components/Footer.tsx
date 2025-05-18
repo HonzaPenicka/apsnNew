@@ -29,12 +29,12 @@ export default function Footer({ isActive }: { isActive?: boolean }) {
   return (
     <div ref={containerRef} className="grid md:grid-cols-4 px-4 md:px-8 lg:px-16 md:py-12 bg-[#28456C]/40 p-4 md:gap-8">
       <div data-animate className="text-2xl font-semibold hidden md:block">
-        Připojte se!
+        Propojte se!
       </div>
 
       <div className="grid grid-cols-2 md:hidden">
         <div data-animate className="text-2xl md:text-4xl font-semibold">
-          Připojte se!
+          Propojte se!
         </div>
 
         <div data-animate className="flex gap-4">
