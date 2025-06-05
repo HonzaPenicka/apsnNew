@@ -45,7 +45,7 @@ export default function AboutContent({ isActive }: { isActive?: boolean }) {
       <div data-animate className="flex items-center justify-center">
         <img
           src="/pics/plan.jpg"
-          alt="real estate"
+          alt="real  estate"
           className="aspect-video bg-cover w-full"
         />
       </div>
